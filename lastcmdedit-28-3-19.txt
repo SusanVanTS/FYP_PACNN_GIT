@@ -1,0 +1,378 @@
+LAST cmd edit --28/3/2019
+
+
+Microsoft Windows [Version 10.0.17134.648]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Asus>git clone https://github.com/BVLC/caffe.git
+Cloning into 'caffe'...
+remote: Enumerating objects: 65066, done.
+remote: Total 65066 (delta 0), reused 0 (delta 0), pack-reused 65066
+Receiving objects: 100% (65066/65066), 72.61 MiB | 252.00 KiB/s, done.
+Resolving deltas: 100% (41105/41105), done.
+
+C:\Users\Asus>cd caffe
+
+C:\Users\Asus\caffe>git checkout windows
+Switched to a new branch 'windows'
+Branch 'windows' set up to track remote branch 'windows' from 'origin'.
+
+C:\Users\Asus\caffe>scirpts\build_win.cmd
+The system cannot find the path specified.
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+'cmake' is not recognized as an internal or external command,
+operable program or batch file.
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>set PATH="C:\Program Files\cmake\bin\";%PATH%
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>Set CMAKE_C_COMPILER=your/path/to/cl.exe
+
+C:\Users\Asus\caffe>set CMAKE_C_COMPLIER=C:\Users\Asus\caffe\cl.exe
+
+C:\Users\Asus\caffe>set CMAKE_C_COMPLIER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.13.26128\bin\Hostx64\x64\cl.exe
+
+C:\Users\Asus\caffe>set CMAKE_C++_COMPLIER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.13.26128\bin\Hostx64\x64\cl.exe
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>git clone git://github.com/ninja-build/ninja.git && cd ninja
+Cloning into 'ninja'...
+remote: Enumerating objects: 10128, done.
+remote: Total 10128 (delta 0), reused 0 (delta 0), pack-reused 10128
+Receiving objects: 100% (10128/10128), 3.56 MiB | 26.00 KiB/s, done.
+Resolving deltas: 100% (7199/7199), done.
+
+C:\Users\Asus\caffe\ninja>cd ..
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>git checkout releae
+error: pathspec 'releae' did not match any file(s) known to git
+
+C:\Users\Asus\caffe>git checkout releae
+error: pathspec 'releae' did not match any file(s) known to git
+
+C:\Users\Asus\caffe>git checkout release
+error: pathspec 'release' did not match any file(s) known to git
+
+C:\Users\Asus\caffe>cd ninja
+
+C:\Users\Asus\caffe\ninja>git checkout release
+Switched to a new branch 'release'
+Branch 'release' set up to track remote branch 'release' from 'origin'.
+
+C:\Users\Asus\caffe\ninja>cat README
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Asus\caffe\ninja>cd ..
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>git checkout windows
+Already on 'windows'
+Your branch is up to date with 'origin/windows'.
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>git checkout windows
+Already on 'windows'
+Your branch is up to date with 'origin/windows'.
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>scripts\build_win.cmd
+The system cannot find the drive specified.
+The system cannot find the drive specified.
+INFO: ============================================================
+INFO: Summary:
+INFO: ============================================================
+INFO: MSVC_VERSION               = 14
+INFO: WITH_NINJA                 = 1
+INFO: CMAKE_GENERATOR            = "Ninja"
+INFO: CPU_ONLY                   = 0
+INFO: CUDA_ARCH_NAME             = Auto
+INFO: CMAKE_CONFIG               = Release
+INFO: USE_NCCL                   = 0
+INFO: CMAKE_BUILD_SHARED_LIBS    = 0
+INFO: PYTHON_VERSION             = 2
+INFO: BUILD_PYTHON               = 1
+INFO: BUILD_PYTHON_LAYER         = 1
+INFO: BUILD_MATLAB               = 0
+INFO: PYTHON_EXE                 = "python"
+INFO: RUN_TESTS                  = 0
+INFO: RUN_LINT                   = 0
+INFO: RUN_INSTALL                = 0
+INFO: ============================================================
+The system cannot find the path specified.
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Asus/caffe/build/CMakeFiles/CMakeOutput.log".
+ERROR: Configure failed
+
+C:\Users\Asus\caffe>
