@@ -14,7 +14,7 @@ PS: PACNN (Perspective Awareness Convolutional Neural Network)
 ## Process
 “Mosh-pit” dense area in crowd will be detected through a density-peak clustering algorithm by calculating the space between crowds. The output of this project is the estimated crowd and the maximum density of that crowd. A list of coordinates and mosh-pits dense area will be generated and images of crowds marked with mosh-pits dense will be generated. 
 
-![FlowChart](/Flow Chart.png)
+![](/Flow Chart.png)
 
 ## Limitation
 The limitation for this project is that it cannot detect real -time conditions because it analyzes images, not videos. 
